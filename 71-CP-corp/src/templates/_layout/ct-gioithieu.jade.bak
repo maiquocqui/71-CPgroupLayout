@@ -1,0 +1,573 @@
+section.banner-page.clearfix
+	.banner-img
+		img(src="img/corp/brgioithieu.jpg", alt="")
+	.container
+		.page-intro
+			h1.page-name Giới thiệu C.P. Việt Nam
+			.intro-content CP cam kết tạo ra các sản phẩm thực phẩm có chất lượng  vệ sinh dinh dưỡng  tốt và có mức độ an toàn cao nhất trong khi vẫn giữ được môi trường thân thiện và thực hiện tốt trách nhiệm xã hội.
+nav.top-nav.clearfix
+	.container
+		ul.top-link
+			li.active
+				a(href="gioithieu.html" rel='m_PageScroll2id') Tổng quan
+			li
+				a(href="gioithieu2.html#part-2" rel='m_PageScroll2id') Ngành nghề kinh doanh
+			li
+				a(href="gioithieu2.html#part-3" rel='m_PageScroll2id') Nghiên cứu và phát triển
+			li
+				a(href="gioithieu2.html#part-4" rel='m_PageScroll2id') Quản lý chất lượng
+nav.child-nav.clearfix
+	.container
+		ul
+			li.active
+				a(href="#section-1" rel='m_PageScroll2id') Tầm nhìn & Sứ mệnh
+			li
+				a(href="#section-2" rel='m_PageScroll2id') Giá trị cốt lõi
+			li
+				a(href="#section-3" rel='m_PageScroll2id') Thông điệp từ Tổng giám đốc
+			li
+				a(href="#section-4" rel='m_PageScroll2id') Lịch sử phát triển
+			li
+				a(href="#section-5" rel='m_PageScroll2id') Cơ cấu cổ đông
+			li
+				a(href="#section-6" rel='m_PageScroll2id') Hệ thống tổ chức
+			li
+				a(href="#section-7" rel='m_PageScroll2id') Hệ thống chi nhánh
+			li
+				a(href="#section-8" rel='m_PageScroll2id') Giải thưởng
+//- section#part-1.about-page.clearfix
+section#section-1.about-section.about-intro.clearfix
+	.container
+		h2.about-title.text-center Tầm nhìn & Sứ mệnh
+		//- .page-des.text-center Chúng tôi luôn ý thức xây dựng thương hiệu bằng việc tuyệt đối khắt khe trong tất cả quy trình để đảm bảo tạo ra sản phẩm chất lượng và an toàn hàng đầu.
+		.row
+			.col-12.col-lg-6
+				.vision-img
+					img(src="img/corp/map.png", alt="")
+			.col-12.col-lg-6
+				.vision-content
+					h3.about-stitle Nâng cao chất lượng cuộc sống
+					.content
+						p Tập đoàn C.P. (Charoen Pokphand Group) được thành lập năm 1921 tại Bangkok, Thái Lan. Nay là một tập đoàn sản xuất kinh doanh đa ngành nghề và là một trong những tập đoàn mạnh nhất của Thái Lan trong lĩnh vực công - nông nghiệp và chế biến thực phẩm. Tập đoàn C.P. bắt đầu vào Việt Nam năm 1988 với văn phòng đại diện tại TP. Hồ Chí Minh. Năm 1993 thành lập Công ty TNHH Chăn Nuôi C.P. Việt Nam, có trụ sở chính tại Khu Công nghiệp Biên Hòa 2, TP. Biên Hòa, tỉnh Đồng Nai. Năm 2011 đổi tên thành Công ty Cổ phần Chăn nuôi C.P. Việt Nam (CPV).
+						figure
+							img(src="img/corp/img1.png", alt="")
+section#section-2.about-section.about-value.clearfix
+	.container
+		h2.about-title.text-center Giá trị cốt lõi
+		.core-value
+			.intro-value
+				.row
+					article.col-12.col-md-6.col-lg-3
+						.value
+							figure
+								.icon
+									img(src="img/feed/i1.png", alt="")
+								figcaption
+									.number
+										strong.counter 10
+									.name Nhà máy sơ chế và sản xuất
+										br
+										|thức ăn chăn nuôi
+					article.col-12.col-md-6.col-lg-3
+						.value
+							figure
+								.icon
+									img(src="img/feed/i2.png", alt="")
+								figcaption
+									.number
+										strong.counter(data-thousand-delimiter=".") 3000
+									.name Trang trại trên
+										br
+										|toàn quốc
+					article.col-12.col-md-6.col-lg-3
+						.value
+							figure
+								.icon
+									img(src="img/feed/i3.png", alt="")
+								figcaption
+									.number
+										strong.counter(data-thousand-delimiter=".") 400000
+									.name Lao động có việc làm
+										br
+										|ổn định
+					article.col-12.col-md-6.col-lg-3
+						.value
+							figure
+								.icon
+									img(src="img/feed/i4.png", alt="")
+								figcaption
+									.number
+										strong.counter(data-decimals="1" data-decimal-delimiter=".") 3.8
+										span triệu tấn
+									.name Thức ăn sản xuất
+										br
+										|hàng năm
+			.row
+				.col-12.col-lg-6
+					.value-content
+						h3.about-stitle Doanh nghiệp dẫn đầu trong sản xuất thực phẩm an toàn
+						.content
+							p Hiện tại, CPV đang tiến hành chuyển giao công nghệ chăn nuôi khép kín, năng suất cao cho người chăn nuôi Việt Nam thông qua hình thức chăn nuôi hợp đồng. CPV cũng khuyến khích, hỗ trợ nông dân để họ tự chủ trong hoạt động chăn nuôi, giúp họ trở thành khách hàng của CPV trong tương lai. Bằng hình thức liên kết chăn nuôi hợp đồng, CPV đã hợp tác với nông dân phát triển hơn 3,000 trang trại trên toàn quốc và tạo công ăn việc làm cho khoảng 400,000 lao động.
+							p Với chuỗi giá trị sản xuất khép kín “Feed – Farm – Food”, CPV đã trở thành doanh nghiệp dẫn đầu trong sản xuất thực phẩm an toàn. Theo đó, CPV đã đầu tư xây dựng 1 nhà máy sơ chế bắp làm nguyên liệu chế biến thức ăn chăn nuôi, 6 nhà máy sản xuất thức ăn chăn nuôi gia súc – gia cầm và 3 nhà máy sản xuất thức ăn thủy sản với tổng công suất hàng năm 3.8 triệu tấn.
+			.value-img
+				img(src="img/feed/introimg.png", alt="")
+section#section-3.about-section.about-ceo.clearfix
+	.container
+		h2.about-title.text-center Thông điệp từ tổng giám đốc
+		.ceo-message
+			.row
+				.col-12.col-lg-6
+					.ceo-img
+						img(src="img/corp/ceo.png", alt="")
+				.col-12.col-lg-6
+					.message-wrap
+						.message-list
+							.item
+								.message
+									.content
+										h5.mess-title “Người làm việc thành công phải là người làm việc nhiều hơn người khác” 
+										p Để đúc rút được kinh nghiệm nhiều hơn người khác, cần phải bắt tay vào làm việc. Vì việc học chỉ mang đến cho ta kiến thức còn kinh nghiệm có nghĩa là phải bắt tay vào làm. Ví dụ như: Chúng ta học lái xe, nhưng nếu muốn lái xe giỏi thì cần phải lên ngồi và lái. Kinh nghiệm sẽ giúp chúng ta tiến bộ. Chúng ta muốn đạt được thành công ắt phải trải qua sự thất bại. Vì vậy, mong mọi người hãy kiên nhẫn, biết cố gắng nỗ lực, siêng năng và có tinh thần trách nhiệm. Tinh thần trách nhiệm ở đây có ý nghĩa rất rộng, đó là… trách nhiệm đối với công việc, trách nhiệm đối với cuộc sống và trách nhiệm đối với gia đình.
+									.ceo-info
+										.ceo-name Chủ tịch 
+											strong Dhanin Chearavanont
+											br
+											|Chủ tịch HĐQT kiêm Chủ tịch Tập đoàn CP
+							.item
+								.message
+									.content
+										h5.mess-title “Người làm việc thành công phải là người làm việc nhiều hơn người khác” 
+										p Để đúc rút được kinh nghiệm nhiều hơn người khác, cần phải bắt tay vào làm việc. Vì việc học chỉ mang đến cho ta kiến thức còn kinh nghiệm có nghĩa là phải bắt tay vào làm. Ví dụ như: Chúng ta học lái xe, nhưng nếu muốn lái xe giỏi thì cần phải lên ngồi và lái. Kinh nghiệm sẽ giúp chúng ta tiến bộ. Chúng ta muốn đạt được thành công ắt phải trải qua sự thất bại. Vì vậy, mong mọi người hãy kiên nhẫn, biết cố gắng nỗ lực, siêng năng và có tinh thần trách nhiệm. Tinh thần trách nhiệm ở đây có ý nghĩa rất rộng, đó là… trách nhiệm đối với công việc, trách nhiệm đối với cuộc sống và trách nhiệm đối với gia đình.
+									.ceo-info
+										.ceo-name Chủ tịch 
+											strong Dhanin Chearavanont
+											br
+											|Chủ tịch HĐQT kiêm Chủ tịch Tập đoàn CP
+							.item
+								.message
+									.content
+										h5.mess-title “Người làm việc thành công phải là người làm việc nhiều hơn người khác” 
+										p Để đúc rút được kinh nghiệm nhiều hơn người khác, cần phải bắt tay vào làm việc. Vì việc học chỉ mang đến cho ta kiến thức còn kinh nghiệm có nghĩa là phải bắt tay vào làm. Ví dụ như: Chúng ta học lái xe, nhưng nếu muốn lái xe giỏi thì cần phải lên ngồi và lái. Kinh nghiệm sẽ giúp chúng ta tiến bộ. Chúng ta muốn đạt được thành công ắt phải trải qua sự thất bại. Vì vậy, mong mọi người hãy kiên nhẫn, biết cố gắng nỗ lực, siêng năng và có tinh thần trách nhiệm. Tinh thần trách nhiệm ở đây có ý nghĩa rất rộng, đó là… trách nhiệm đối với công việc, trách nhiệm đối với cuộc sống và trách nhiệm đối với gia đình.
+									.ceo-info
+										.ceo-name Chủ tịch 
+											strong Dhanin Chearavanont
+											br
+											|Chủ tịch HĐQT kiêm Chủ tịch Tập đoàn CP
+							.item
+								.message
+									.content
+										h5.mess-title “Người làm việc thành công phải là người làm việc nhiều hơn người khác” 
+										p Để đúc rút được kinh nghiệm nhiều hơn người khác, cần phải bắt tay vào làm việc. Vì việc học chỉ mang đến cho ta kiến thức còn kinh nghiệm có nghĩa là phải bắt tay vào làm. Ví dụ như: Chúng ta học lái xe, nhưng nếu muốn lái xe giỏi thì cần phải lên ngồi và lái. Kinh nghiệm sẽ giúp chúng ta tiến bộ. Chúng ta muốn đạt được thành công ắt phải trải qua sự thất bại. Vì vậy, mong mọi người hãy kiên nhẫn, biết cố gắng nỗ lực, siêng năng và có tinh thần trách nhiệm. Tinh thần trách nhiệm ở đây có ý nghĩa rất rộng, đó là… trách nhiệm đối với công việc, trách nhiệm đối với cuộc sống và trách nhiệm đối với gia đình.
+									.ceo-info
+										.ceo-name Chủ tịch 
+											strong Dhanin Chearavanont
+											br
+											|Chủ tịch HĐQT kiêm Chủ tịch Tập đoàn CP
+
+section#section-4.about-section.about-history.clearfix
+	.container
+		h2.about-title.text-center Lịch sử phát triển
+		.history-wrap
+			.history-event
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+				.item
+					.event-wrap
+						.event
+							.row.flex-content-center
+								.col-12.col-md-10.col-xl-8
+									.img-slide
+										.item
+											.img
+												img(src="img/corp/h1.jpg", alt="")
+									.slide-caption <strong>CP Việt Nam</strong> có hơn <strong>90 chi nhánh</strong> trên toàn quốc và hơn <strong>16,000</strong> công nhân viên
+			.history-year
+				.item
+					.year 2007
+				.item
+					.year 2008
+				.item
+					.year 2009
+				.item
+					.year 2010
+				.item
+					.year 2011
+				.item
+					.year 2012
+				.item
+					.year 2013
+				.item
+					.year 2014
+				.item
+					.year 2017
+				.item
+					.year 2018
+section#section-5.about-section.about-company.clearfix
+	.container
+		h2.about-title.text-center Cơ cấu cổ đông
+		.page-des.text-center Cơ cấu cổ đông của Công ty cổ phần chăn nuôi C.P. Việt Nam
+		.company-structure
+			.content
+				//- p.text-center 
+				figure
+					img(src="img/corp/st1.png", alt="")
+				.row
+					.col-12.col-lg-7
+						p <strong>Công ty Cổ phần C.P. Việt Nam (C.P. Việt Nam)</strong> do <strong>Charoen Pokphand Foods Public Company Limited</strong> (gọi tắt là <strong>“CPF”</strong>), thuộc tập đoàn C.P. Thái Lan, sở hữu và kiểm soát thông qua cơ cấu như sau:
+						ul
+							li CPF trực tiếp nắm giữ <strong>29,18%</strong> cổ phần tại C.P. Việt Nam; 
+							li CPF gián tiếp nắm giữ <strong>70,82%</strong> cổ phần tại C.P. Việt Nam thông qua việc nắm giữ cổ phần kiểm soát tại C.P. Pokphand Co., Ltd.
+						p <strong>C.P. Pokphand Co., Ltd. (gọi tắt là “CPP”)</strong> là công ty có cổ phiếu niêm yết tại thị trường chứng khoán Hong Kong. Với mức cổ phần kiểm soát 76,08% do CPF nắm giữ, CPP là một công ty con thuộc CPF và tập đoàn C.P. Thái Lan.
+						p Bằng việc nắm giữ cổ phần kiểm soát tại CPP nêu trên và trực tiếp sở hữu 29,18% cổ phần tại C.P. Việt Nam, CPF kiểm soát hoàn toàn các hoạt động đầu tư và kinh doanh của C.P. Việt Nam.
+					.col-12.col-lg-5
+						figure
+							img(src="img/corp/ab1.jpg", alt="")
+							figcaption <strong>Ban lãnh đạo cấp cao Tập đoàn CP</strong>
+					.col-12.col-lg-5
+						figure
+							img(src="img/corp/ab2.jpg", alt="")
+							figcaption <strong>Trụ sở chính Tập đoàn CP tại 313 Silom Road, Silom, Bangkok, Thailand</strong>
+					.col-12.col-lg-7
+						p Ngài Dhanin Chearavanont, quốc tịch Thái Lan, là chủ tịch Hội đồng quản trị của CPP, và đồng thời là chủ tịch của tập đoàn C.P. Thái Lan. Tất cả hoạt động của C.P. Việt Nam do Tổng giám đốc người Thái Lan lãnh đạo và được điều hành bởi đội ngũ người Thái Lan và Việt Nam.
+						p CPF và CPP là các công ty niêm yết trên Sở giao dịch chứng khoán Thái Lan (Stock Exchange of Thailand - SET) và Sở giao dịch chứng khoán Hong Kong (Hong Kong Stock Exchange – SEHK), tuân thủ các quy định nghiêm ngặt về công bố và minh bạch thông tin của các sở giao dịch chứng khoán nói trên.
+						p Mọi thông tin về cơ cấu cổ đông, ban điều hành, tài chính … của CPF và CPP đều được công bố và truy cập dễ dàng trên các website của 2 doanh nghiệp này tại các địa chỉ:
+							br
+							|<strong>CPF:</strong> 
+							a(href="http://www.cpfworldwide.com") http://www.cpfworldwide.com 
+							|và <strong>CPP:</strong> 
+							a(href="http://www.cpp.hk") http://www.cpp.hk
+				figure
+					img(src="img/corp/ab3.jpg", alt="")
+					figcaption <strong>05 Hiện tại CP đang đầu tư tại 16 nước trên toàn thế giới - CP was inventor in 16 countries in the World</strong>
+
+section#section-6.about-section.about-company.clearfix
+	.container
+		h2.about-title.text-center Hệ thống tổ chức
+		.company-system
+			img(src="img/corp/httc.png", alt="")
+section#section-7.about-section.about-system.clearfix
+	.container
+		h2.about-title.text-center Hệ thống chi nhánh
+		.store-system
+			.row
+				.col-12.col-md-7.col-lg-8
+					.system-map
+						iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7891036.493258788!2d103.37938796306418!3d15.045618064038006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174df0295468a2d%3A0xa7e6705988755f74!2zQ8O0bmcgVHkgQ-G7lSBQaOG6p24gQ2jEg24gTnXDtGkgQy5QLiBWaeG7h3QgTmFtIChDLlAuIFZpZXRuYW0gQ29ycG9yYXRpb24p!5e0!3m2!1svi!2s!4v1513140821226', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+				.col-12.col-md-5.col-lg-4
+					section.findmap-wrap.clearfix
+						.findmap
+							h1.system-title Hệ thống chi nhánh
+							.filtermap.clearfix
+								.label Chọn hệ thống CP bạn muốn bắt đầu
+								.field
+									select.form-select
+										option(value='') CP Food
+								.field
+									select.form-select
+										option(value='') Tp.Hồ Chí Minh
+						.addresslist.clearfix
+							#results.dealer-list
+								ul#list.noli.list_system
+									li.active
+										span.number 1
+										div
+											strong CP Fresh Mart
+											div
+												span Địa chỉ: 363 Nguyễn Tri Phương, P.5, Q.10, Tp Hồ Chí Minh
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+									li
+										span.number 2
+										div
+											strong CP Fresh Mart
+											div
+												span Địa chỉ: 20/1 Lê Đức Thọ, P.16, Q Gò Vấp, Tp Hồ Chí Minh
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+									li
+										span.number 3
+										div
+											strong CP Shop
+											div
+												span Địa chỉ: 186 Nguyễn Lương Bằng, Khu phố Reverside, phường Tân Phú, Quận 7, Tp.HCM
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+									li
+										span.number 4
+										div
+											strong CP Fresh Mart
+											div
+												span Địa chỉ: 363 Nguyễn Tri Phương, P.5, Q.10, Tp Hồ Chí Minh
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+									li
+										span.number 5
+										div
+											strong CP Fresh Mart
+											div
+												span Địa chỉ: 20/1 Lê Đức Thọ, P.16, Q Gò Vấp, Tp Hồ Chí Minh
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+									li
+										span.number 6
+										div
+											strong CP Shop
+											div
+												span Địa chỉ: 186 Nguyễn Lương Bằng, Khu phố Reverside, phường Tân Phú, Quận 7, Tp.HCM
+											div
+												span Điện thoại: 090 334 3190 - 093 323 6353
+
+section#section-8.about-section.about-award.clearfix
+	.container
+		h2.about-title.text-center Giải thưởng
+		.award-list
+			.item
+				.row
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a1.png" data-fancybox="aa")
+									img(src="img/corp/a1.png", alt="")
+								figcaption Kỷ lục ngày hội có số người khám bệnh, cấp phát thuốc miễn phí nhiều nhất Việt Nam
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a2.png" data-fancybox="aa")
+									img(src="img/corp/a2.png", alt="")
+								figcaption Giải thưởng tình nguyện Quốc gia năm 2013
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a3.png" data-fancybox="aa")
+									img(src="img/corp/a3.png", alt="")
+								figcaption Thành tích đóng góp cho ngành nông nghiệp giai đoạn 2010-2015
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a4.png" data-fancybox="aa")
+									img(src="img/corp/a4.png", alt="")
+								figcaption Giải thưởng bông lúa vàng năm 2015
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a5.png" data-fancybox="aa")
+									img(src="img/corp/a5.png", alt="")
+								figcaption Bằng khen bộ trưởng bộ y tế năm 2013
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a6.png" data-fancybox="aa")
+									img(src="img/corp/a6.png", alt="")
+								figcaption Bằng khen chương trình Hành trình đỏ 2015
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a7.png" data-fancybox="aa")
+									img(src="img/corp/a7.png", alt="")
+								figcaption Chứng nhận 500 doanh nghiệp lớn nhất Việt Nam năm 2015
+					article.col-12.col-sm-6.col-md-4.col-lg-3
+						.award
+							figure
+								a.award-img(href="img/corp/a8.png" data-fancybox="aa")
+									img(src="img/corp/a8.png", alt="")
+								figcaption Chứng nhận giải thưởng Giọt Hồng năm 2015
+
+
+
+//- section#part-2.about-section.about-service.clearfix
+	.container
+		h2.page-title.text-center Ngành nghề kinh doanh
+		.page-des.text-center Quy trình khép kín từ trồng nguyên liệu cho đến sản xuất thức ăn thành phẩm
+	.service-list
+		.row
+			article.col-12.col-md-4
+				.service-col
+					figure
+						a.service-img(href="#!")
+							img(src="img/corp/s1.jpg", alt="")
+						figcaption
+							h3.service-name 
+								a(href="#!") Thức ăn chăn nuôi
+							.service-des Nhà máy thức ăn chăn nuôi Hải Dương, một trong số nhà máy thế hệ mới của thế giới, được thiết kế và xây dựng bằng công nghệ hiện đại, đoạt giải thưởng “Đại bàng” của Mỹ.
+			article.col-12.col-md-4
+				.service-col
+					figure
+						a.service-img(href="#!")
+							img(src="img/corp/s2.jpg", alt="")
+						figcaption
+							h3.service-name 
+								a(href="#!") Con giống
+							.service-des Các giống vật nuôi của CPV được tạo lập từ nguồn gen tốt nhất của thế giới. Nuôi thích nghi và chọn lọc trong điều kiện Việt Nam để nhân giống theo nhu cầu của thị trường Việt Nam.
+			article.col-12.col-md-4
+				.service-col
+					figure
+						a.service-img(href="#!")
+							img(src="img/corp/s3.jpg", alt="")
+						figcaption
+							h3.service-name 
+								a(href="#!") Sản phẩm thực phẩm
+							.service-des Sản phẩm CP được sản xuất theo tiêu chuẩn Quốc tế từ hệ thống khép kín của Công ty Cổ phần Chăn nuôi C.P. Việt Nam bao gồm các sản phẩm tươi như thịt gà, thịt vịt, trứng gà, thịt lợn; và các sản phẩm chín chế biến như xúc xích, lạp xưởng, gà Năm sao.
+//- section#part-3.about-section.about-improving.clearfix
+	.container
+		h2.page-title.text-center Nghiên cứu và phát triển
+		.page-des.text-center Không ngừng nghiên cứu và phát triển công nghệ để mang đến sản phẩm tốt nhất cho người tiêu dùng
+	.improve-list
+		.row.no-gutters
+			article.col-12.col-lg-6
+				.improve-col
+					figure
+						.improve-img
+							img(src="img/feed/about1.jpg", alt="")
+						figcaption
+							h3.improve-name Phòng điều khiển
+							.improve-des Các nhà máy chế biến thực phẩm (thịt và thủy sản) chất lượng cao, đạt tiêu chuẩn quốc tế được CPV đầu tư xây dựng tại các địa bàn Đồng Nai, Hà Nội, Bến Tre và Thừa Thiên – Huế. Đồng thời, CPV đang đẩy mạnh phát triển hệ thống phân phối thực phẩm sạch, an toàn, đảm bảo chất lượng đến người tiêu dùng thông qua các kênh như CP Shop, Fresh Mart và hệ thống các siêu thị trên toàn quốc. 
+			article.col-12.col-lg-6
+				.improve-col
+					figure
+						.improve-img.improve-img-slide
+							.item
+								img(src="img/feed/about2.jpg", alt="")
+							.item
+								img(src="img/feed/about2.jpg", alt="")
+							.item
+								img(src="img/feed/about2.jpg", alt="")
+						figcaption
+							h3.improve-name Phòng thí nghiệm
+							.improve-des Phòng Thí nghiệm là trung tâm phân tích và xét nghiệm các chỉ tiêu chính xác và đạt chuẩn với  hệ thống máy móc nhập khẩu châu Âu, công nghệ tiên tiến và đội ngũ chuyên gia hàng đầu luôn làm việc nghiêm túc và nhiệt tâm.
+//- section#part-4.about-section.about-quality.clearfix
+	.container
+		h2.page-title.text-center Quản lý chất lượng
+		.page-des.text-center CPV đã đạt nhiều chứng nhận trong nước và quốc tế
+	.quality-banner
+		img(src="img/corp/qlbn.jpg", alt="")
+	.container
+		.cert-list
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award1.png" data-fancybox="cert")
+							img(src="img/feed/award1.png", alt="")
+						figcaption
+							h3.cert-name Giải vàng chất lượng Quốc gia năm 2013
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award2.png" data-fancybox="cert")
+							img(src="img/feed/award2.png", alt="")
+						figcaption
+							h3.cert-name Giải thưởng tình nguyện Quốc gia năm 2013
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award3.png" data-fancybox="cert")
+							img(src="img/feed/award3.png", alt="")
+						figcaption
+							h3.cert-name Chứng nhận Asean Excellent Enterprise and Businessman
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award4.png" data-fancybox="cert")
+							img(src="img/feed/award4.png", alt="")
+						figcaption
+							h3.cert-name Chứng chỉ ISO 14001:2004
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award1.png" data-fancybox="cert")
+							img(src="img/feed/award1.png", alt="")
+						figcaption
+							h3.cert-name Giải vàng chất lượng Quốc gia năm 2013
+			.item
+				.cert
+					figure
+						a.cert-img(href="img/feed/award2.png" data-fancybox="cert")
+							img(src="img/feed/award2.png", alt="")
+						figcaption
+							h3.cert-name Giải thưởng tình nguyện Quốc gia năm 2013

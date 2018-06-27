@@ -1,0 +1,294 @@
+body
+	padding-top: 120px
+	+media-breakpoint-down(lg)
+		padding-top: 60px
+
+// HEADER FOOD
+.header-food
+	z-index: 1000
+	background: $white
+	+pos(fix, 0 0 null 0)
+	// &.hide
+	// 	+media-breakpoint-up(xl)
+	// 		+pos(fix,null)
+	// 		+transform(translateY(-100%))
+	// 		.sitelogo
+	// 			height: 80px
+	// 			img 
+	// 				height: 60px
+	// 		.toptool
+	// 			display: none
+	// 		.menu
+	// 			margin-top: 20px
+	&.minimal
+		box-shadow: 0 10px 20px -10px color-rgba($black,0.1)
+		+media-breakpoint-up(xl)
+			+transition(all,0.5s)
+			.sitelogo
+				height: 60px
+				img
+					height: 50px
+			.toptool
+				+transition(all,0.5s)
+				margin-top: 10px
+	.container
+		+media-breakpoint-down(lg)
+			max-width: 100%
+			width: 100%
+	.headertop
+	.sitelogo
+		+flexbox
+		height: 80px
+		justify-content: center
+		align-items: center
+		float: left
+		+media-breakpoint-down(lg)
+			height: 60px
+		a
+			display: block
+			
+		img 
+			+transition(all,0.5s)
+			+media-breakpoint-down(lg)
+				height: 40px
+			+media-breakpoint-down(xs)
+				height: 30px
+	.headermenu
+	.colright
+		float: right
+	.toptool
+		float: right
+		clear: both
+		margin-top: 22px
+		+media-breakpoint-down(lg)
+			margin-top: 12px
+	.sitelink
+		float: left
+		+flexbox
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(xs)
+			 float: none
+			 padding: 10px 20px
+		&:after
+			content: ''
+			display: inline-block
+			vertical-align: middle
+			width: 82px
+			height: 37px
+			background: url(../img/dotmap.png) center center no-repeat
+			background-size: contain
+			margin-left: 10px
+			+media-breakpoint-down(xs)
+				display: none
+		.dropdown-toggle
+			+pos(rel,null)
+			+fs(13rem)
+			line-height: 28px
+			padding: 0px 10px
+			padding-right: 30px
+			border: 1px solid darken($white,10%)
+			color: darken($white,60%)
+			display: inline-block
+			vertical-align: middle
+			min-width: 160px
+			+media-breakpoint-down(xs)
+				width: 100%
+			&:after
+				content: '\f107'
+				font-family: 'fontawesome'
+				width: unset
+				height: unset
+				border: none
+				line-height: 1
+				+pos(abs, 7px 10px null null)
+		.dropdown-menu
+			min-width: 160px
+			+bor-rad(0)
+			border: 1px solid darken($white,10%)
+			box-shadow: none
+			.dropdown-item
+				white-space: nowrap
+				line-height: 1.5
+				padding: 5px 10px
+				+fs(13rem)
+				&:hover
+					background: color-rgba($black,0.05)
+	.search
+		float: left
+		margin-left: 15px
+		padding: 2px 0
+		+pos(rel,null)
+		.searchtoggle
+			width: 30px
+			line-height: 30px
+			height: 30px
+			text-align: center
+			color: $white
+			background: $yellow
+
+		.searchwrap
+			+media-breakpoint-down(sm)
+				+pos(abs, 100% 0 null null)
+				display: none
+			.searchbox
+				+flexbox
+				input
+					line-height: 28px
+					border: 1px solid darken($white,10%)
+					padding: 0px
+					width: 0px
+					+transition(all,0.5s)
+					visibility: hidden
+					opacity: 0
+					+fs(14rem)
+					+media-breakpoint-down(sm)
+						width: 150px
+						visibility: visible
+						opacity: 1
+						border: none
+						background: $main
+						color: $white
+						padding: 0px 10px
+				.searchbutton
+					width: 30px
+					line-height: 30px
+					height: 30px
+					text-align: center
+					color: $white
+					background: $yellow
+					+media-breakpoint-down(sm)
+						display: none
+				&:hover
+					+media-breakpoint-up(md)
+						input
+							width: 150px
+							visibility: visible
+							opacity: 1
+							padding: 0px 10px
+	.language
+		+flexbox
+		float: left
+		margin-left: 10px
+		padding: 2px 0
+		+media-breakpoint-down(xs)
+			margin-left: 1
+		a
+			width: 30px
+			height: 30px
+			+flexbox
+			justify-content: center
+			align-items: center
+			border: 1px solid darken($white,10%)
+			+ a
+				margin-left: 1px
+	.headermenu
+		border-top: 1px solid darken($white,5%)
+		+media-breakpoint-down(lg)
+			border-top: none
+	.overlay
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 900
+		background: $black
+		opacity: 0.8
+		display: none
+	.btn-showmenu
+		width: 40px
+		height: 40px
+		line-height: 40px
+		text-align: center
+		+fs(18rem)
+		margin: 10px 0
+		margin-right: 15px
+		color: $red
+		background: lighten($yellow,30%)
+		border: 1px solid $yellow
+		float: left
+		+media-breakpoint-down(xs)
+			width: 30px
+			height: 30px
+			line-height: 30px
+			margin: 15px 0
+			margin-right: 15px
+	.menu
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			margin: 0
+			padding: 0
+			width: 280px
+			z-index: 1000
+			overflow: auto
+			float: none
+			background: $white
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0))
+		.menulogo
+			display: none
+			border-bottom: 2px solid $blue
+			padding: 20px 0
+			+media-breakpoint-down(lg)
+				display: block
+			.sitelogo
+				float: none
+				img 
+					+media-breakpoint-down(lg)
+						height: 60px
+		.menucontent
+			+flexbox
+			flex-wrap: wrap
+			justify-content: space-between
+			+media-breakpoint-down(lg)
+				justify-content: flex-start
+		.menuwrap
+			+media-breakpoint-down(lg)
+				width: 100%
+			ul.menulink
+				+flexbox
+				flex-wrap: wrap
+				> li
+					+pos(rel,null)
+					+media-breakpoint-down(lg)
+						float: none
+						width: 100%
+					+ li
+						&:before
+							content: ''
+							display: block
+							width: 1px
+							height: 16px
+							background: darken($white,10%)
+							+pos(abs, 50% null null 0px)
+							+transform(translateY(-50%))
+							+media-breakpoint-down(lg)
+								display: none
+					> a
+						display: block
+						+fs(15rem)
+						font-weight: 600
+						color: $main
+						padding: 9px 25px
+						+media-breakpoint-down(lg)
+							display: block
+							padding: 10px 20px
+							font-weight: 600
+
+					&:hover, &.active
+						> a
+							color: $red
+		.social
+			+media-breakpoint-down(lg)
+				margin: 20px 20px 0
+				text-align: center
+				width: 100%
+				border-top: 1px solid darken($white,10%)
+			a
+				display: inline-block
+				+fs(16rem)
+				color: darken($white,20%)
+				padding: 0px 10px
+				line-height: 40px
+				&:hover
+					color: $blue

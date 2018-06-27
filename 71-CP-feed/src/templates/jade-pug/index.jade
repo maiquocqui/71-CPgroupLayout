@@ -1,0 +1,14 @@
+extends _layout/layout
+
+block variables
+	- var title = 'CP Group'
+	- var bodyclass = 'homepage'
+
+block css
+
+block body
+	include _layout/header-feed
+	include _layout/banner-feed
+	main
+		include _layout/ct-home-feed
+	include _layout/footer-feed

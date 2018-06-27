@@ -1,0 +1,233 @@
+
+.top-nav
+	background: $white
+	border-bottom: 1px solid darken($white,10%)
+	ul.top-link
+		+flexbox
+		justify-content: center
+		padding: 10px 0
+		+media-breakpoint-down(md)
+			display: block
+			white-space: nowrap
+			padding: 5px 15px
+			overflow: auto
+		li
+			+media-breakpoint-down(md)
+				display: inline-block
+			a
+				display: block
+				line-height: 28px
+				+fs(14rem)
+				text-transform: uppercase
+				text-align: center
+				font-weight: 600
+				color: $main
+				border: 1px solid transparent
+				padding: 0px 20px
+				+bor-rad(50px)
+				+media-breakpoint-down(md)
+					+fs(12rem)
+				&.mPS2id-highlight
+					border-color: $green
+					color: $green
+.about-title
+	+fs(24rem)
+	font-weight: 700
+	color: $blue
+	text-transform: uppercase
+	margin-bottom: 30px
+	&:after
+		content: ''
+		display: block
+		width: 60px
+		height: 1px
+		background: $blue
+		margin-top: 10px
+	&.text-center
+		&:after
+			margin: 10px auto 0
+.about-stitle
+	+fs(24rem)
+	line-height: 1.3
+	font-weight: 500
+	color: $main
+	margin-bottom: 20px
+.about-section
+	border-bottom: 1px solid darken($white,10%)
+	background: url(../img/corp/aboutbg.png) top left repeat-x
+	padding: 50px 0
+	overflow: hidden
+	+pos(rel,null)
+.about-intro
+	.intro-img1, .intro-img2
+		img
+			width: 100%
+	.intro-content
+		+fs(14rem)
+		font-weight: 300
+		padding: 20px 40px
+		min-height: 195px
+		+media-breakpoint-down(lg)
+			// +fs(13rem)
+		+media-breakpoint-down(md)
+			padding: 20px 0
+	.intro-img2
+		+media-breakpoint-down(lg)
+			display: none
+
+.about-service
+	padding-bottom: 0
+	.service-list
+		box-shadow: 0px 3px 10px color-rgba($black,0.1)
+		article
+			&:nth-child(even)
+				+media-breakpoint-up(lg)
+					.service-col
+						figure
+							.service-img
+								order: 2
+							figcaption
+								order: 1
+								&:before
+									top: inherit
+									bottom: 0
+									+transform(translate(-50%,50%)rotateZ(45deg))
+
+		.service-col
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.service-img
+					width: 100%
+					img
+						width: 100%
+						height: 300px
+						object-fit: cover
+				figcaption
+					+pos(rel,null)
+					width: 100%
+					height: 300px
+					background: $white
+					+flexbox
+					flex-wrap: wrap
+					justify-content: center
+					align-items: center
+					align-content: center
+					text-align: center
+					padding: 0px 60px
+					+media-breakpoint-down(lg)
+						padding: 0px 20px
+					+media-breakpoint-down(md)
+						height: inherit
+						padding: 30px 40px
+					+media-breakpoint-down(sm)
+						padding: 20px
+					&:before
+						content: ''
+						display: block
+						width: 20px
+						height: 20px
+						background: $white
+						+pos(abs, 0 null null 50%)
+						+transform(translate(-50%,-50%)rotateZ(45deg))
+					.service-name
+						width: 100%
+						+fs(24rem)
+						color: $blue
+						font-weight: 600
+						margin-bottom: 20px
+						+media-breakpoint-down(lg)
+							+fs(18rem)
+							margin-bottom: 10px
+						+media-breakpoint-down(sm)
+							+fs(16rem)
+					.service-des
+						width: 100%
+						+fs(14rem)
+						line-height: 1.7
+						+media-breakpoint-down(lg)
+							+fs(13rem)
+.about-improving
+	// margin-bottom: 60px
+	padding-bottom: 0
+	.improve-list
+		article
+			&:nth-child(odd)
+				+media-breakpoint-up(lg)
+					.improve-col
+						figure
+							.improve-img
+								order: 2
+							figcaption
+								order: 1
+								&:before
+									top: inherit
+									bottom: 0
+									+transform(translate(-50%,50%)rotateZ(45deg))
+		.improve-col
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.improve-img
+					width: 100%
+					.slick-dots
+						+pos(abs, null 0 10px 0)
+						text-align: center
+						li
+							display: inline-block
+							width: 10px
+							height: 10px
+							+bor-rad(50px)
+							background: $green
+							&.slick-active
+								background: $white
+							+ li
+								margin-left: 10px
+							button
+								display: none
+					img
+						width: 100%
+				figcaption
+					width: 100%
+					height: 320px
+					+flexbox
+					flex-wrap: wrap
+					justify-content: center
+					align-items: center
+					align-content: center
+					background: darken($white,4%)
+					padding: 0px 70px
+					+pos(rel,null)
+					+media-breakpoint-down(lg)
+						padding: 0px 20px
+						height: 270px
+					+media-breakpoint-down(md)
+						height: inherit
+						padding: 30px 40px
+					+media-breakpoint-down(sm)
+						padding: 20px
+					&:before
+						content: ''
+						display: block
+						width: 20px
+						height: 20px
+						background: darken($white,4%)
+						+pos(abs, 0 null null 70px)
+						+transform(translate(-50%,-50%)rotateZ(45deg))
+					.improve-name
+						width: 100%
+						+fs(24rem)
+						font-weight: 500
+						color: $main
+						margin-bottom: 10px
+						+media-breakpoint-down(lg)
+							+fs(18rem)
+						+media-breakpoint-down(sm)
+							+fs(16rem)
+					.improve-des
+						width: 100%
+						+fs(14rem)
+						font-weight: 300
+						line-height: 1.6
+						+media-breakpoint-down(lg)
+							+fs(13rem)

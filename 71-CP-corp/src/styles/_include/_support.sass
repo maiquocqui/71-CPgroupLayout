@@ -1,0 +1,54 @@
+.faqlist
+	.faq
+		border: 1px solid darken($white,10%)
+		margin-bottom: 10px
+		.faqtitle
+			padding: 10px 20px
+			+fs(16rem)
+			font-weight: 500
+			padding-left: 40px
+			+pos(rel,null)
+			cursor: pointer
+			&:before
+				content: '\f059'
+				color: $green
+				+pos(abs, 10px null null 10px)
+			&:after
+				content: '\f107'
+				+pos(abs, 10px 10px null null)
+			&:hover
+				color: $blue
+		.faqcontent
+			border-top: 1px solid darken($white,10%)
+			padding: 20px
+			margin: 0
+			display: none
+
+.sendmess
+	background: darken($white,3%)
+	padding: 15px
+	.module-title
+		+fs(16rem)
+		font-weight: 500
+		text-transform: uppercase
+		color: $blue
+		margin-bottom: 15px
+	.form-group
+		margin-bottom: 10px
+		input, textarea
+			width: 100%
+			border: 1px solid darken($white,10%)
+			padding: 7px 15px
+			+fs(14rem)
+	.frm-btn
+	input[type="submit"]
+		display: inline-block
+		background: $green
+		color: $white
+		border: none
+		+fs(13rem)
+		font-weight: 500
+		text-transform: uppercase
+		padding: 7px 20px
+		&:hover
+			filter: brightness(120%)

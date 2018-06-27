@@ -1,0 +1,80 @@
+.footer-feed
+	background: darken($white,4%) url(../img/farm/footerbg.png) bottom center no-repeat
+	.footertop
+		padding: 50px 0 0
+	.footer-col
+		.title
+			+fs(12rem)
+			font-weight: 700
+			color: $main
+			margin-bottom: 15px
+			text-transform: uppercase
+			&:after
+				content: '\f107'
+				font-family: 'fontawesome'
+				margin-left: 5px
+				color: darken($white,40%)
+		.footer-link
+			ul
+				li
+					margin-bottom: 7px
+					a
+						color: darken($white,60%)
+						text-transform: uppercase
+						+fs(11rem)
+						font-weight: 500
+		.social
+			+flexbox
+			flex-wrap: wrap
+			justify-content: center
+			a
+				display: block
+				width: 30px
+				height: 30px
+				+bor-rad(50px)
+				background: $white
+				color: darken($white,60%)
+				margin-right: 10px
+				margin-bottom: 10px
+				text-align: center
+				line-height: 30px
+				+fs(18rem)
+				&:hover
+					color: $blue
+	.footer-bottom
+		padding: 40px 0
+		text-align: center
+		.company
+			+fs(13rem)
+			font-weight: 700
+			color: $blue
+			text-transform: uppercase
+			margin-bottom: 10px
+			+media-breakpoint-down(xs)
+				+fs(11rem)
+		.address
+			+fs(11rem)
+			text-transform: uppercase
+			color: darken($white,60%)
+			font-weight: 600
+			margin-bottom: 10px
+			+media-breakpoint-down(xs)
+				+fs(9rem)
+		.copyright
+			+fs(11rem)
+			color: darken($white,40%)
+.up
+	width: 40px
+	height: 40px
+	line-height: 40px
+	text-align: center
+	color: $white
+	background: $green
+	+bor-rad(50px)
+	cursor: pointer
+	+pos(fix, null 20px 20px null)
+	+transform(scale(1,-1))
+	z-index: 50
+	opacity: 0
+	&.active
+		opacity: 1

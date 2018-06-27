@@ -1,0 +1,121 @@
+.product-sidebar
+	background: url(../img/food/product/patternbg.jpg) center center no-repeat
+	padding: 20px 30px
+	margin-top: -40px
+	margin-bottom: 30px
+	+pos(rel,null)
+	z-index: 10
+	.product-cate
+		+fs(18rem)
+		font-weight: 700
+		color: $red
+		margin-bottom: 25px
+	ul.cate-link
+		margin-bottom: 25px
+		border-bottom: 1px solid color-rgba($black,0.1)
+		padding-bottom: 20px
+		li
+			a
+				color: $main
+				+fs(15rem)
+				display: block
+				padding: 8px 0
+				font-weight: 500
+	.cate-img
+		figure
+			text-align: center
+			img
+			figcaption
+				padding: 10px 0 0
+				+fs(13rem)
+				font-weight: 500
+.sidebar-ad
+	a
+		display: block
+		img
+			width: 100%
+
+
+
+.product-page
+	padding: 40px 0
+	.product-title
+		+fs(24rem)
+		font-weight: 800
+		color: $black
+		margin-bottom: 15px
+		text-transform: uppercase
+	.product-group
+		margin-bottom: 20px
+	.product-list
+		.product
+			margin-bottom: 30px
+			figure
+				padding: 10px
+				+bor-rad(5px)
+				border: 1px solid darken($white,10%)
+				.product-img
+					+flexbox
+					justify-content: center
+					align-items: center
+					height: 200px
+					img
+						+transition(all,0.5s)
+				figcaption
+					padding: 10px 0
+					.product-name
+						a
+							display: block
+							text-align: center
+							+fs(15rem)
+							font-weight: 600
+							color: $main
+							text-transform: uppercase
+				&:hover
+					.product-img
+						img
+							+transform(scale3d(1.1,1.1,1))
+					figcaption
+						.product-name
+							a
+								color: $red
+
+
+.food-page
+	+pos(rel,null)
+	.food-bg
+		img
+			+media-breakpoint-down(md)
+				height: 750px
+				object-fit: cover
+			+media-breakpoint-down(xs)
+				height: 600px
+	.food-intro
+		width: 360px
+		background: url(../img/food/product/bg.png) center center repeat
+		+pos(abs, 0 null null auto)
+		padding: 30px
+		box-shadow: 0px 5px 10px color-rgba($black,0.2)
+		+media-breakpoint-down(xs)
+			width: auto
+			left: 15px
+			right: 15px
+		&:after
+			content: ''
+			background: url(../img/food/product/bg2.png) center center no-repeat
+			+pos(abs, 100% null null 0)
+			width: 100%
+			height: 10px
+			background-size: 100% 10px
+		.food-name
+			+fs(24rem)
+			font-weight: 700
+			color: $red
+			text-transform: uppercase
+			margin-bottom: 10px
+		.food-des
+			+fs(15rem)
+			color: $main
+			margin-bottom: 20px
+		.food-img
+			text-align: center

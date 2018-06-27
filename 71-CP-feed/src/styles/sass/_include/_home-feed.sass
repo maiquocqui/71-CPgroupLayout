@@ -1,0 +1,239 @@
+.home-title
+	+fs(20rem)
+	text-transform: uppercase
+	color: $main
+	font-weight: 700
+	margin-bottom: 30px
+	+media-breakpoint-down(lg)
+		+fs(18rem)
+	+media-breakpoint-down(md)
+		+fs(18rem)
+	&.icon
+		padding-left: 30px
+		+pos(rel,null)
+		+fs(20rem)
+		font-weight: 600
+		color: $blue
+		+media-breakpoint-down(sm)
+			+fs(16rem)
+		&:before
+			content: ''
+			display: block
+			width: 31px
+			height: 30px
+			background: url(../img/home-icon.png) center center no-repeat
+			background-size: contain
+			+pos(abs, -4px null null 0)
+			+media-breakpoint-down(sm)
+				top: -7px
+.home-des
+	+fs(14rem)
+	font-weight: 300
+	max-width: 75%
+	margin: -5px auto 30px
+	+media-breakpoint-down(md)
+		max-width: unset
+
+.page-title
+	@extend .about-title
+.page-des
+	// +fs(16rem)
+	font-weight: 500
+	max-width: 80%
+	margin: -15px auto 30px
+	+media-breakpoint-down(lg)
+		+fs(14rem)
+		margin-bottom: 20px
+	+media-breakpoint-down(md)
+		max-width: 100%
+	+media-breakpoint-down(sm)
+		+fs(13rem)
+
+.home-feed
+	padding: 50px 0 0
+	background: url(../img/feed/homebg.png) center bottom no-repeat
+	background-size: 100% auto
+	+pos(rel,null)
+	+media-breakpoint-down(lg)
+		background-size: 150%
+	+media-breakpoint-down(md)
+		background-size: 250%
+		padding-bottom: 0
+	+media-breakpoint-down(xs)
+		background-size: 400%
+	&:after
+		content: ''
+		display: block
+		width: 50px
+		height: 48px
+		background: url(../img/titleicon.png) center center no-repeat
+		+pos(abs, null null -26px 50%)
+		+transform(translateX(-50%))
+	.workflow-list
+		.workflow
+			padding-bottom: 10px
+			border-bottom: 4px solid $lime
+			margin-bottom: 50px
+			.col-lg-4
+				+media-breakpoint-down(md)
+					order: 1
+			.col-lg-8
+				+media-breakpoint-down(md)
+					order: 2
+			&:last-child
+			&.s2
+				border-bottom-color: $lblue
+				.flow-text
+					.flow-icon
+						.icon
+							&:after
+								background: $lblue
+						.number
+							color: $lblue
+					.flow-content
+						.flow-name
+							color: $lblue
+				.flow-img
+					border-color: $lblue
+			&.s3
+				border-bottom-color: $orange
+				.flow-text
+					.flow-icon
+						.icon
+							&:after
+								background: $orange
+						.number
+							color: $orange
+					.flow-content
+						.flow-name
+							color: $orange
+				.flow-img
+					border-color: $orange
+
+			&.s4
+				border-bottom-color: $green
+				.flow-text
+					.flow-icon
+						.icon
+							&:after
+								background: $green
+						.number
+							color: $green
+					.flow-content
+						.flow-name
+							color: $green
+				.flow-img
+					border-color: $green
+			.flow-text
+				+flexbox
+				width: 100%
+				margin-bottom: 20px
+				.flow-icon
+					width: 60px
+					+media-breakpoint-down(lg)
+						width: 50px
+					.icon
+						text-align: center
+						&:after
+							content: ''
+							display: block
+							width: 100%
+							height: 4px
+							background: $lime
+							margin-top: 15px
+						img
+							width: 100%
+					.number
+						+fs(30rem)
+						text-align: center
+						color: $lime
+						font-weight: 500
+						+media-breakpoint-down(lg)
+							+fs(24rem)
+				.flow-content
+					width: calc(100% - 60px)
+					padding-left: 20px
+					+media-breakpoint-down(lg)
+						width: calc(100% - 50px)
+						padding-left: 15px
+					.flow-name
+						+fs(24rem)
+						font-weight: 500
+						color: $lime
+						margin-bottom: 10px
+						+media-breakpoint-down(lg)
+							+fs(20rem)
+					.flow-des
+						+fs(14rem)
+						+media-breakpoint-down(lg)
+							+fs(13rem)
+			.flow-img
+				img
+					width: 100%
+			.award-list
+				margin-left: 80px
+				+flexbox
+				margin-top: 15px
+				+media-breakpoint-down(md)
+					margin-left: 0
+					width: 100%
+					justify-content: center
+				.award
+					+ .award
+						margin-left: 25px
+						+media-breakpoint-down(md)
+							margin-left: 30px
+					.award-name
+						+fs(13rem)
+						font-weight: 600
+						text-align: center
+
+			.flow-link
+				display: inline-block
+				padding: 0px 30px
+				+fs(13rem)
+				text-transform: uppercase
+				color: $white
+				+bor-rad(50px)
+				line-height: 40px
+				background: $green
+				margin-top: 15px
+	.video
+		.play
+			display: block
+			text-align: center
+			padding: 50px 0
+			+media-breakpoint-down(xs)
+				padding: 40px 0
+			.text
+				+fs(18rem)
+				font-weight: 700
+				text-transform: uppercase
+				color: $white
+				text-shadow: 3px 5px 10px color-rgba($black,0.25)
+			&:hover
+				text-shadow: 3px 5px 20px color-rgba($black,0.25)
+
+.home-feed-brand
+	padding: 50px 0
+	.brand-list
+		+flexbox
+		justify-content: center
+		.brand-col
+			width: 200px
+			margin-bottom: 10px
+		.brand-logo
+			+flexbox
+			justify-content: center
+			align-items: center
+			height: 100px
+			+media-breakpoint-down(md)
+				height: 80px
+			+media-breakpoint-down(xs)
+				height: 60px
+			img
+				max-width: 80%
+				max-height: 80%
+				+media-breakpoint-down(xs)
+					max-width: 80%
+					max-height: 80%

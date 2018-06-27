@@ -1,0 +1,50 @@
+section.banner-page.clearfix
+	.banner-img
+		img(src="img/corp/br2.jpg", alt="")
+	.container
+		.page-intro
+			h1.page-name Sản phẩm
+			.intro-content C.P. Việt Nam cam kết sản xuất các sản phẩm thực phẩm có chất lượng đảm bảo vệ sinh và có mức độ an toàn cao nhất trong khi vẫn giữ được môi trường thân thiện và trách nhiệm xã hội.
+section.product-page.clearfix
+	.container
+		h1.page-title.text-center SẢN PHẨM
+		.product-list
+			.product-row
+				.col-12.col-lg-11
+					.product
+						figure
+							a.product-img(href="#!")
+								img(src="img/corp/sp1.jpg", alt="")
+							figcaption
+								.product-content
+									h2.product-name
+										a(href="#!") Thức ăn chăn nuôi
+									.product-des Thức ăn chăn nuôi của CPV được sản xuất từ nguồn nguyên liệu đã qua chọn lọc kỹ. Áp dụng công nghệ cao trong sản xuất tại các nhà máy đạt chứng nhận tiêu chuẩn quốc tế, đồng thời được xác nhận từ các chuyên gia dinh dưỡng và cơ quan nhà nước.
+									.link-wrap
+										a.link(href="#!") Xem thêm <span class="lnr lnr-arrow-right"></span>
+			.product-row
+				.col-12.col-lg-11
+					.product
+						figure
+							a.product-img(href="#!")
+								img(src="img/corp/sp2.jpg", alt="")
+							figcaption
+								.product-content
+									h2.product-name
+										a(href="#!") Con giống
+									.product-des Các giống vật nuôi của CPV được tạo lập từ nguồn gen tốt nhất của thế giới. Nuôi thích nghi và chọn lọc trong điều kiện Việt Nam để nhân giống theo nhu cầu của thị trường Việt Nam.
+									.link-wrap
+										a.link(href="#!") Xem thêm <span class="lnr lnr-arrow-right"></span>
+			.product-row
+				.col-12.col-lg-11
+					.product
+						figure
+							a.product-img(href="#!")
+								img(src="img/corp/sp3.jpg", alt="")
+							figcaption
+								.product-content
+									h2.product-name
+										a(href="#!") Sản phẩm thực phẩm
+									.product-des Sản phẩm CP được sản xuất theo tiêu chuẩn Quốc tế từ hệ thống khép kín của Công ty Cổ phần Chăn nuôi C.P. Việt Nam bao gồm các sản phẩm tươi như thịt gà, thịt vịt, trứng gà, thịt lợn; và các sản phẩm chín chế biến như xúc xích, lạp xưởng, gà Năm sao.
+									.link-wrap
+										a.link(href="#!") Xem thêm <span class="lnr lnr-arrow-right"></span>

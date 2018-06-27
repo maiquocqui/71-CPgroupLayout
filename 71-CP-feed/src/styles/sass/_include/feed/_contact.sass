@@ -1,0 +1,67 @@
+.contact-page
+	@extend .about-section
+	.contact-form
+		margin-bottom: 60px
+		+media-breakpoint-down(md)
+			margin-bottom: 40px
+		.form-group
+			margin-bottom: 10px
+			label
+				display: none
+			input, textarea
+				background: darken($white,4%)
+				border: 1px solid darken($white,10%)
+				padding: 10px 20px
+				+fs(14rem)
+				color: darken($white,60%)
+				+media-breakpoint-down(lg)
+					+fs(13rem)
+				&:hover, &:active, &:focus
+					background: $white
+			textarea
+				min-height: 155px
+		input[type="submit"]
+			background: $green
+			color: $white
+			padding: 10px 50px
+			text-transform: uppercase
+			border: none
+			+media-breakpoint-down(lg)
+				+fs(13rem)
+	.contact-info
+		background: #e8eff7
+		padding: 25px 30px
+		margin-bottom: 60px
+		+media-breakpoint-down(lg)
+			padding: 20px
+		+media-breakpoint-down(md)
+			margin-bottom: 40px
+		.title
+			+fs(24rem)
+			font-weight: 600
+			color: $main
+			margin-bottom: 10px
+			+media-breakpoint-down(lg)
+				+fs(18rem)
+		ul
+			li
+				+pos(rel,null)
+				padding-left: 25px
+				margin-bottom: 12px
+				+fs(14rem)
+				+media-breakpoint-down(lg)
+					+fs(13rem)
+				.fa
+					+pos(abs, 2px null null 0)
+					color: $blue
+					+fs(16rem)
+				a
+					color: $main
+					&:hover
+						color: $blue
+	.contact-map
+		iframe
+			+media-breakpoint-down(sm)
+				height: 400px
+			+media-breakpoint-down(xs)
+				height: 300px

@@ -1,0 +1,14 @@
+extends _layout/layout
+
+block variables
+	- var title = 'CP Group'
+	- var bodyclass = 'homefood'
+
+block css
+
+block body
+	include _layout/header-food
+	include _layout/banner-food
+	main
+		include _layout/ct-home-food
+	include _layout/footer-food

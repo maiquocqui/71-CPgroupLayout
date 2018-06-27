@@ -1,0 +1,144 @@
+.home-title
+	+fs(20rem)
+	text-transform: uppercase
+	color: $main
+	font-weight: 700
+	margin-bottom: 30px
+	+media-breakpoint-down(lg)
+		+fs(18rem)
+	+media-breakpoint-down(md)
+		+fs(18rem)
+	&.icon
+		padding-left: 30px
+		+pos(rel,null)
+		+fs(20rem)
+		font-weight: 600
+		color: $blue
+		+media-breakpoint-down(sm)
+			+fs(16rem)
+		&:before
+			content: ''
+			display: block
+			width: 31px
+			height: 30px
+			background: url(../img/home-icon.png) center center no-repeat
+			background-size: contain
+			+pos(abs, -4px null null 0)
+			+media-breakpoint-down(sm)
+				top: -7px
+.home-des
+	+fs(15rem)
+	font-weight: 500
+	color: $main
+	max-width: 80%
+	margin: 0 auto 40px
+	+media-breakpoint-down(sm)
+		max-width: 100%
+.page-title
+	@extend .about-title
+	// +fs(30rem)
+	// font-weight: 600
+	// line-height: 1.3
+	// text-transform: uppercase
+	// color: $blue
+	// margin-bottom: 20px
+	// +media-breakpoint-down(lg)
+	// 	+fs(24rem)
+	// +media-breakpoint-down(md)
+	// 	+fs(20rem)
+	// +media-breakpoint-down(sm)
+	// 	+fs(18rem)
+.page-des
+	// +fs(16rem)
+	font-weight: 500
+	max-width: 80%
+	margin: -15px auto 30px
+	+media-breakpoint-down(lg)
+		+fs(14rem)
+		margin-bottom: 20px
+	+media-breakpoint-down(md)
+		max-width: 100%
+	+media-breakpoint-down(sm)
+		+fs(13rem)
+
+.home-farm
+	padding: 50px 0
+	background: url(../img/farm/homebg.png) center bottom no-repeat
+	background-size: 100% auto
+	+pos(rel,null)
+	+media-breakpoint-down(sm)
+		background-size: 200% auto
+	&:after
+		content: ''
+		display: block
+		width: 50px
+		height: 48px
+		background: url(../img/titleicon.png) center center no-repeat
+		+pos(abs, null null -26px 50%)
+		+transform(translateX(-50%))
+	
+	.workflow-list
+		.workflow
+			text-align: center
+			margin-bottom: 40px
+			border-top: 4px solid $green
+			&.heo
+				border-top-color: #007c85
+				figure
+					.wf-name
+						color: #007c85
+			&.tom
+				border-top-color: #3472bf
+				figure
+					.wf-name
+						color: #3472bf
+			figure
+				.wf-name
+					+fs(18rem)
+					padding: 20px 0
+					color: $green
+					font-weight: 800
+					text-transform: uppercase
+					+media-breakpoint-down(md)
+						+fs(15rem)
+				.wf-img
+					img
+						width: 100%
+				figcaption
+					padding: 15px
+					+media-breakpoint-down(md)
+						padding: 15px 0
+				.wf-des
+					+fs(14rem)
+	.workflow-intro
+		border-top: 4px solid #93b83c
+		.wf-name
+			+fs(18rem)
+			padding: 20px 0
+			color: #93b83c
+			font-weight: 800
+			text-transform: uppercase
+			text-align: center
+			+media-breakpoint-down(md)
+				+fs(15rem)
+		.intro-content
+			background: url(../img/farm/home/patternbg.jpg) center center repeat
+			box-shadow: 3px 5px 25px color-rgba($black,0.05)
+			padding: 15px
+			margin-bottom: 150px
+			+media-breakpoint-down(md)
+				margin-bottom: 100px
+			.row
+				margin: 0px -7px
+				.col-12
+					padding: 0px 7px
+			.img
+				margin-bottom: 20px
+				img
+					width: 100%
+			.content
+				max-width: 90%
+				font-weight: 500
+				margin: 0 auto 10px
+				+media-breakpoint-down(sm)
+					max-width: 100%

@@ -1,0 +1,259 @@
+.product-section
+	@extend .about-section
+	.container
+		+pos(rel,null)
+		z-index: 5
+	.product-img
+		text-align: center
+		margin-bottom: 40px
+	.btn-wrap
+		text-align: center
+	.btn-viewmore
+		display: inline-block
+		+fs(15rem)
+		font-weight: 700
+		text-transform: uppercase
+		color: $white
+		padding: 0px 40px
+		line-height: 36px
+		background: linear-gradient(to right, $blue, $green)
+		+bor-rad(50px)
+		border: 2px solid $white
+		&:hover
+			filter: brightness(120%)
+			box-shadow: 0px 10px 20px -10px $green
+.product-feed
+	&:after
+		content: ''
+		display: block
+		+pos(abs, 0 null 0 0)
+		right: 0
+		background: url(../img/corp/feedbg.png) bottom center no-repeat
+		background-size: 100% auto
+.product-farm
+	&:after
+		content: ''
+		display: block
+		+pos(abs, 0 null 0 0)
+		right: 0
+		background: url(../img/corp/farmbg.png) bottom center no-repeat
+		background-size: 100% auto
+.product-food
+	&:after
+		content: ''
+		display: block
+		+pos(abs, 0 null 0 0)
+		right: 0
+		background: url(../img/corp/foodbg.png) bottom center no-repeat
+		background-size: 100% auto
+	.about-title
+		color: $red
+		&:after
+			background: $red
+	.btn-viewmore
+		background: linear-gradient(to right, $orange, $red)
+		&:hover
+			box-shadow: 0px 10px 20px -10px $red
+
+
+.product-page
+	padding: 70px 0
+	+pos(rel,null)
+	+media-breakpoint-down(xs)
+		padding: 60px 0
+	&:before
+		content: ''
+		width: 1px
+		height: 50px
+		background: $blue
+		+pos(abs, 0 null null 50%)
+		+media-breakpoint-down(xs)
+			height: 30px
+	.page-title
+		margin-bottom: 30px
+	
+	.product
+		figure
+			+flexbox
+			flex-wrap: wrap
+			.product-img
+				display: block
+				width: 50%
+				+pos(rel,null)
+				z-index: 5
+				img
+					width: 100%
+					height: 340px
+					object-fit: cover
+			figcaption
+				width: 50%
+				padding: 30px 40px
+				background: darken($white,4%)
+				.product-content
+					padding-bottom: 20px
+					border-bottom: 1px solid darken($white,10%)
+				.product-name
+					+fs(24rem)
+					font-weight: 600
+					margin-bottom: 15px
+					a
+						color: $green
+				.product-des
+					+fs(14rem)
+					font-weight: 300
+					color: $main
+					margin-bottom: 15px
+				.link
+					+fs(14rem)
+					font-weight: 300
+					color: darken($white,40%)
+					&:hover
+						color: $main
+	.product-list
+		.product-row
+			+flexbox
+			flex-wrap: wrap
+			margin: 0px -15px
+			&:nth-child(1)
+				margin-bottom: 50px
+				.product
+					figure
+						.product-img
+						figcaption
+							margin-top: 50px
+							margin-bottom: -50px
+			&:nth-child(2)
+				margin-bottom: 50px
+				justify-content: flex-end
+				.product
+					figure
+						.product-img
+							order: 2
+						figcaption
+							order: 1
+							margin: -50px 0
+							padding: 80px 40px
+							text-align: right
+			&:nth-child(3)
+				.product
+					figure
+						.product-img
+						figcaption
+							margin-top: -50px
+							margin-bottom: 50px
+							padding-top: 80px
+	.product-table
+		border: 1px solid darken($white,10%)
+		width: 100%
+		th, td
+			border: none
+			padding: 10px
+			border-left: 1px solid darken($white,10%)
+			&:first-child
+				border-left: none
+			&:first-child, &:last-child
+				text-align: center
+		th
+			font-weight: 500
+			color: $white
+			background: $green
+		td
+			+fs(14rem)
+		tr
+			&:nth-child(odd)
+				background: darken($white,3%)
+	.category-list
+		.category
+			margin-bottom: 60px
+			figure
+				.category-img
+					+flexbox
+					height: 330px
+					margin-bottom: 40px
+					// background: url(../img/feed/prbg.png) center top no-repeat
+					img
+						// +transform(scale3d(0.9,0.9,1))
+						+transition(all,0.5s)
+				figcaption
+					.category-name
+						text-align: center
+						a
+							display: inline-block
+							+bor-rad(10px)
+							border: 1px solid $green
+							padding: 10px 20px
+							+fs(14rem)
+							font-weight: 600
+							text-transform: uppercase
+							color: $green
+				&:hover
+					.category-img
+						img
+							// +transform(scale3d(1,1,1))
+					figcaption
+						.category-name
+							a
+								background: linear-gradient(to right, $blue, $green)
+								color: $white
+								box-shadow: 0px 10px 20px -10px color-rgba($blue,1)
+.product-category
+	ul.category-link
+		> li
+			+pos(rel,null)
+			margin-bottom: 1px
+			> a
+				display: block
+				color: $main
+				background: darken($white,5%)
+				padding: 9px 30px
+				+fs(15rem)
+			.btn-showsub
+				+pos(abs, 7px 15px null null)
+				+fs(18rem)
+				cursor: pointer
+				+transition(all,0.5s)
+			.sub
+				display: none
+				border: 1px solid darken($white,5%)
+				border-top: none
+				ul
+					> li
+						border-bottom: 1px solid darken($white,10%)
+						&:last-child
+							border-bottom: none
+						> a
+							display: block
+							color: $main
+							padding: 9px 30px
+							padding-left: 50px
+							+fs(15rem)
+							+pos(rel,null)
+							&:before
+								content: ''
+								display: block
+								width: 5px
+								height: 5px
+								background: $main
+								+pos(abs, 20px null null 30px)
+						&:hover
+							> a
+								color: $green
+						&.active
+							> a
+								color: $green
+								font-weight: 500
+								border-left: 4px solid $green
+								margin-left: -1px
+								padding-left: 46px
+								&:before
+									background: $green
+									left: 26px
+			&.active
+				> a
+					color: $white
+					background: $green
+				.btn-showsub
+					color: $white
+					// +transform(scale(1,-1))
+				.sub
+					// display: block

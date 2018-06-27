@@ -1,0 +1,63 @@
+.improve-page
+	@extend .about-section
+	background: url(../img/corp/improve/patternbg.jpg) center center repeat
+	.notice-list
+		.notice
+			+pos(rel,null)
+			padding-bottom: 10px
+			border-bottom: 5px solid #94b83d
+			margin-bottom: 20px
+			&:nth-child(2)
+				border-bottom-color: #00bae5
+				.notice-content
+					border-top-color: #00bae5
+					figure
+						.icon
+							border-bottom-color: #00bae5
+						figcaption
+							strong
+								color: #00bae5
+			&:nth-child(3)
+				border-bottom-color: #f57d2e
+				.notice-content
+					border-top-color: #f57d2e
+					figure
+						.icon
+							border-bottom-color: #f57d2e
+						figcaption
+							strong
+								color: #f57d2e
+			.notice-content
+				+pos(abs, 150px null 0px 0)
+				z-index: 3
+				width: 460px
+				background: $white
+				border-top: 5px solid #94b83d
+				padding: 30px 20px
+				+media-breakpoint-down(lg)
+					+pos(static,unset)
+					width: 100%
+				figure
+					+flexbox
+					align-items: flex-start
+					.icon
+						width: 60px
+						padding-bottom: 15px
+						border-bottom: 4px solid #94b83d
+						+media-breakpoint-down(xs)
+							width: 40px
+						img
+							width: 100%
+					figcaption 
+						width: calc(100% - 60px)
+						padding-left: 20px
+						+fs(14rem)
+						color: $main
+						+media-breakpoint-down(xs)
+							width: calc(100% - 40px)
+							+fs(13rem)
+						strong
+							color: #94b83d
+							font-weight: 600
+			.notice-img
+				text-align: right

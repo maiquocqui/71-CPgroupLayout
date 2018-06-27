@@ -1,0 +1,51 @@
+.career-page
+	@extend .about-section
+	.page-title
+		margin-bottom: 30px
+	.job-wrap
+		.table
+			+bor-rad(0)
+			border: 1px solid darken($white,10%)
+			th, td
+				+fs(14rem)
+				padding: 10px 15px
+				vertical-align: middle
+				background: none
+				&:nth-child(3)
+					width: 140px
+				&:last-child
+					width: 80px
+			th
+				+fs(13rem)
+				color: $green
+				border: none
+				text-transform: uppercase
+				font-weight: 600
+				border-bottom: 2px solid $green
+			tr
+				&:first-child
+					&:hover
+						background: none
+					td
+						border-top: none
+				&:nth-child(even)
+					background: darken($white,2%)
+				&:hover
+					background: lighten($blue,50%)
+			a
+				color: $main
+				&:hover
+					color: $blue
+				&:before
+					content: '\f105'
+					margin-right: 5px
+			.badge
+				padding: 5px 10px
+				font-weight: 500
+	.career-content
+		margin-bottom: 40px
+	.content
+		margin-bottom: 20px
+		+ .share
+			margin-bottom: 30px
+

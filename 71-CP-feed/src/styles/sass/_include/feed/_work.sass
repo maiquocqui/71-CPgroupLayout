@@ -1,0 +1,92 @@
+.work-page
+	@extend .about-section
+	.workflow
+		+pos(rel,null)
+		padding: 100px 0 0
+		+media-breakpoint-down(md)
+			padding-top: 0
+		.work-map
+			text-align: center
+			+media-breakpoint-down(lg)
+				img
+					width: 70%
+			+media-breakpoint-down(md)
+				display: none
+				img
+					width: 100%
+		.work-list
+			+media-breakpoint-down(md)
+				+flexbox
+				flex-wrap: wrap
+			.work
+				width: 150px
+				+media-breakpoint-down(lg)
+					width: 130px
+				+media-breakpoint-down(md)
+					width: 33.33%
+					padding: 0px 15px
+					margin-bottom: 30px
+				+media-breakpoint-down(sm)
+					width: 50%
+				+media-breakpoint-down(xs)
+					width: 100%
+				+media-breakpoint-up(lg)
+					&:nth-child(1)
+						+pos(abs, 130px null null 0)
+					&:nth-child(2)
+						+pos(abs, 0 null null 50%)
+						+transform(translate(-50px,0))
+						+media-breakpoint-down(lg)
+							+transform(translate(-45px,0))
+					&:nth-child(3)
+						+pos(abs, 130px 0 null null)
+						+media-breakpoint-down(lg)
+							top: 110px
+					&:nth-child(4)
+						+pos(abs, null 0 330px null)
+						+media-breakpoint-down(lg)
+							bottom: 240px
+					&:nth-child(5)
+						+pos(abs, null null 300px 0)
+						+media-breakpoint-down(lg)
+							bottom: 230px
+					&:nth-child(6)
+						+pos(abs, null 250px 60px null)
+						+media-breakpoint-down(lg)
+							right: 200px
+							bottom: 40px
+				figure
+					.work-img
+						text-align: center
+						display: none
+						margin-bottom: 20px
+						+media-breakpoint-down(md)
+							display: block
+					figcaption
+						+flexbox
+						flex-wrap: wrap
+						align-items: center
+						align-content: center
+						text-align: center
+						+media-breakpoint-down(md)
+							align-items: flex-start
+							align-content: flex-start
+							text-align: left
+						.number
+							+fs(72rem)
+							line-height: 0.9
+							font-weight: 900
+							color: $blue
+							width: 100%
+							// width: 70px
+							text-align: center
+							+media-breakpoint-down(lg)
+								+fs(50rem)
+							+media-breakpoint-down(md)
+								width: 70px
+						.text
+							// width: calc(100% - 70px)
+							+fs(14rem)
+							line-height: 1.5
+							+media-breakpoint-down(md)
+								width: calc(100% - 70px)

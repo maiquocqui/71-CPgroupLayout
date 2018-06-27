@@ -1,0 +1,405 @@
+.product-page
+	@extend .about-section
+	.fullwidth
+		+media-breakpoint-up(xl)
+			max-width: 1460px
+			width: 100%
+	.pig-slide
+		height: 430px
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		border: 1px solid darken($white,10%)
+		margin-bottom: 30px
+		+media-breakpoint-down(md)
+			height: 400px
+		+media-breakpoint-down(xs)
+			height: 300px
+			img
+				max-width: 80%
+				max-height: 80%
+	.pig-info
+		margin-bottom: 30px
+		.info-title 
+			+fs(16rem)
+			text-transform: uppercase
+			font-weight: 600
+			color: $blue
+			border-bottom: 1px solid $blue
+			margin-bottom: 15px
+			padding: 10px 0
+			+media-breakpoint-down(sm)
+				+fs(15rem)
+		.pig-overview
+			margin-bottom: 11px
+			+media-breakpoint-down(sm)
+				margin-bottom: 10px
+			ul
+				list-style-type: none
+				padding-left: 0
+				li
+					+pos(rel,null)
+					padding-left: 25px
+					&:before
+						content: '\f00c'
+						+pos(abs, 0 null null 0)
+						opacity: 0.8
+		.table
+			border: 1px solid darken($white,10%)
+			tr
+				&:first-child
+					td
+						border-top: none
+				&:nth-child(odd)
+					td
+						background: darken($white,3%)
+			td
+				+fs(14rem)
+				padding: 8px 20px
+				+media-breakpoint-down(sm)
+					+fs(13rem)
+					padding: 7px 15px
+				&:last-child
+					text-align: right
+					width: 80px
+					border-left: 1px solid darken($white,10%)
+	.page-des
+		&.pig-des
+			+fs(14rem)
+			margin-bottom: 30px
+			+media-breakpoint-down(sm)
+				+fs(13rem)
+	.pig-description
+		.pig-content
+			margin-bottom: 10px
+			&:nth-child(even)
+				+media-breakpoint-up(xl)
+					figure
+						.img
+							order: 2
+						figcaption
+							order: 1
+			&:last-child
+				margin-bottom: 0
+			figure
+				+flexbox
+				+media-breakpoint-down(lg)
+					flex-wrap: wrap
+				.img
+					width: 66.66%
+					+media-breakpoint-down(lg)
+						width: 100%
+					img
+						width: 100%
+				figcaption
+					width: 33.33%
+					background: darken($white,5%)
+					padding: 35px
+					+flexbox
+					+fs(14rem)
+					line-height: 1.7
+					justify-content: center
+					align-items: center
+					align-content: center
+					+media-breakpoint-down(lg)
+						width: 100%
+					+media-breakpoint-down(md)
+						+fs(13rem)
+						padding: 30px
+					+media-breakpoint-down(sm)
+						padding: 20px
+.pig-list
+	article
+	.pig-col
+		+media-breakpoint-down(md)
+			margin-bottom: 30px
+		figure
+			.pig-img
+				display: block
+				border: 1px solid darken($white,4%)
+				border-bottom: none
+				img
+					width: 100%
+					height: 160px
+					object-fit: cover
+					+media-breakpoint-down(lg)
+						height: 100px
+					+media-breakpoint-down(md)
+						height: 150px
+					+media-breakpoint-down(sm)
+						height: 100px
+					+media-breakpoint-down(xs)
+						height: 180px
+			figcaption
+				background: darken($white,4%)
+				padding: 15px 20px
+				+transition(all,0.5s)
+				.pig-name
+					+fs(13rem)
+					line-height: 1.4
+					a
+						color: $main
+			&:hover
+				.pig-img
+				figcaption
+					background: $green
+					box-shadow: 0px 3px 7px color-rgba($black,0.15)
+					.pig-name
+						a
+							color: $white
+.other-pig
+	@extend .about-section
+.pig-system
+	@extend .about-section
+
+.shrimp-intro
+	padding: 100px 0 250px
+	background: url(../img/farm/tombg.jpg) center bottom no-repeat
+	background-size: cover
+	.page-des
+		margin-bottom: 0
+
+.shrimp-tech
+	.tech-title
+		+fs(24rem)
+		text-transform: uppercase
+		font-weight: 600
+		color: $green
+		margin-bottom: 40px
+		&:after
+			content: ''
+			display: block
+			width: 60px
+			height: 1px
+			background: $green
+			margin: 0 auto
+	.tech-wrap
+		+pos(rel,null)
+		margin-bottom: 150px
+		+media-breakpoint-down(lg)
+			+flexbox
+			flex-wrap: wrap
+			// align-items: center
+			// align-content: center
+			margin-bottom: 60px
+		+media-breakpoint-down(sm)
+			margin-bottom: 0
+		.tech-img
+			text-align: center
+			width: 400px
+			margin: 0 auto
+			+media-breakpoint-down(lg)
+				width: 50%
+				padding: 0px 30px
+			+media-breakpoint-down(md)
+				padding: 0px 15px
+			+media-breakpoint-down(sm)
+				width: 100%
+				margin-bottom: 30px
+		.tech-list
+			+media-breakpoint-down(lg)
+				width: 50%
+				padding: 0px 30px
+			+media-breakpoint-down(md)
+				padding: 0px 15px
+			+media-breakpoint-down(sm)
+				width: 100%
+			.tech
+				+pos(abs,50% null null 0)
+				width: 350px
+				+flexbox
+				+media-breakpoint-down(lg)
+					+pos(static,unset)
+					+transform(translate(0,0))
+					margin-bottom: 30px
+					width: 100%
+				&:nth-child(1)
+					+transform(translate(0,-50%))
+					+media-breakpoint-down(lg)
+						+transform(translate(0,0))
+				&:nth-child(2)
+					top: 0
+					right: 0
+					left: unset
+				&:nth-child(3)
+					top: inherit
+					bottom: -50px
+					right: 0
+					left: unset
+				.tech-number
+					+fs(120rem)
+					line-height: 90px
+					font-weight: 700
+					color: $blue
+					+media-breakpoint-down(lg)
+						width: 60px
+						+fs(100rem)
+						line-height: 80px
+					+media-breakpoint-down(md)
+						+fs(80rem)
+						line-height: 60px
+				.tech-content
+					padding: 0px 20px
+					+media-breakpoint-down(lg)
+						width: calc(100% - 60px)
+					.tech-name
+						+fs(15rem)
+						text-transform: uppercase
+						font-weight: 600
+						color: $green
+						margin-bottom: 5px
+						+media-breakpoint-down(lg)
+							+fs(16rem)
+							margin-bottom: 5px
+						+media-breakpoint-down(lg)
+							+fs(15rem)
+					.tech-des
+						+fs(13rem)
+						font-weight: 300
+						+media-breakpoint-down(lg)
+							+fs(12rem)
+	.tech-list2
+		.tech-col
+			figure
+				text-align: center
+				.tech-img
+					display: block
+					width: 240px
+					height: 240px
+					+bor-rad(1000px)
+					overflow: hidden
+					margin: 0 auto
+					+media-breakpoint-down(md)
+						width: 200px
+						height: 200px
+					img
+						width: 100%
+						height: 100%
+						object-fit: cover
+				figcaption
+					padding: 15px 0
+					.tech-name
+						a
+							color: $main
+.shrimp-kind
+	background: url(../img/farm/aboutbg.jpg) top left repeat
+	.shrimp-list
+		.shrimp-col
+			+media-breakpoint-down(md)
+				margin-bottom: 30px
+			figure
+				.shrimp-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					background: darken($white,7%)
+					h4.shrimp-name
+						+fs(15rem)
+						padding: 12px 25px
+						a
+							color: $main
+
+.workflow-intro
+	.flow-list
+		margin: 0px -15px
+		+flexbox
+		flex-wrap: wrap
+		+pos(rel,null)
+		&:before
+			content: ''
+			display: block
+			width: 100%
+			height: 0
+			border-bottom: 2px dashed darken($white,10%)
+			+pos(abs, 177px null null 0)
+			+media-breakpoint-down(md)
+				display: none
+		.flow
+			padding: 0px 15px
+			width: 20%
+			+media-breakpoint-down(md)
+				width: 100%
+				margin-bottom: 20px
+			+media-breakpoint-down(xs)
+				margin-bottom: 30px
+			figure
+				+flexbox
+				flex-wrap: wrap
+				.flow-img
+					display: block
+					border: 4px solid $blue
+					+bor-rad(15px)
+					+pos(rel,null)
+					margin-bottom: 160px
+					+media-breakpoint-down(md)
+						margin-bottom: 0
+						width: 200px
+					+media-breakpoint-down(xs)
+						width: 100%
+					&:before
+						content: ''
+						display: block
+						width: 0px
+						height: 0px
+						border: 10px solid transparent
+						border-top: 50px solid $blue
+						border-bottom: none
+						+pos(abs, 100% null null 50%)
+						+transform(translate(-50%,0))
+						+media-breakpoint-down(md)
+							display: none
+					&:after
+						content: ''
+						display: block
+						width: 0px
+						height: 80px
+						border-right: 2px dashed darken($white,10%)
+						+pos(abs, null null -160px 50%)
+						+transform(translate(-50%,0))
+						+media-breakpoint-down(md)
+							display: none
+					img
+						width: 100%
+						+bor-rad(10px)
+				figcaption
+					text-align: center
+					+pos(rel,null)
+					+media-breakpoint-down(md)
+						width: calc(100% - 200px)
+						text-align: left
+						padding-left: 20px
+					+media-breakpoint-down(xs)
+						width: 100%
+						padding: 15px 0
+						text-align: center
+					&:before
+						content: ''
+						width: 17px
+						height: 17px
+						+bor-rad(50px)
+						background: $blue
+						+pos(abs, -100px null null 50%)
+						+transform(translate(-50%,-50%))
+						+media-breakpoint-down(md)
+							display: none
+					&:after
+						content: ''
+						width: 13px
+						height: 13px
+						+bor-rad(50px)
+						background: $blue
+						border: 2px solid $white
+						+transform(translate(-50%,-50%))
+						+pos(abs, -100px null null 50%)
+						+media-breakpoint-down(md)
+							display: none
+					.flow-name
+						+fs(16rem)
+						font-weight: 600
+						color: $blue
+						margin-bottom: 10px
+					.flow-des
+						+fs(14rem)
+						font-weight: 300

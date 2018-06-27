@@ -1,0 +1,46 @@
+.banner-page
+	+pos(rel,null)
+	// &:after
+	// 	content: ''
+	// 	display: block
+	// 	+pos(abs, null null 0 50%)
+	// 	width: 1px
+	// 	height: 150px
+	// 	background: $white
+	// 	+media-breakpoint-down(lg)
+	// 		height: 70px
+	// 	+media-breakpoint-down(md)
+	// 		height: 50px
+	// 	+media-breakpoint-down(sm)
+	// 		display: none
+	.banner-img
+		+pos(rel,null)
+		&:before
+			content: ''
+			+pos(abs, 0 null 0 0)
+			right: 0
+			background: url(../img/breadcrumb/sd.png) center center no-repeat
+			opacity: 0.5
+			// background-size: contain
+		img
+			width: 100%
+	.page-name
+		+fs(32rem)
+		line-height: 1.3
+		font-weight: 600
+		color: $white
+		text-shadow: 0px 1px 2px color-rgba($black,0.5)
+		text-align: center
+		+pos(abs, 0 0 null 0)
+		bottom: 0
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(lg)
+			+fs(28rem)
+		+media-breakpoint-down(md)
+			+fs(24rem)
+		+media-breakpoint-down(sm)
+			+fs(20rem)
+			padding: 0px 15px

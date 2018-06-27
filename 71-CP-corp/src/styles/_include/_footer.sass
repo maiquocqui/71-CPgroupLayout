@@ -1,0 +1,169 @@
+.footer-corp
+	background: darken($white,4%) url(../img/footerbg.png) bottom center no-repeat
+	border-top: 3px solid $green
+	+pos(rel,null)
+	+media-breakpoint-down(sm)
+		background-position: center bottom
+	&:before
+		content: ''
+		display: block
+		height: 3px
+		width: 33.33%
+		background: $blue
+		+pos(abs, -3px null null 0)
+		z-index: 1
+	.footertop
+		padding: 40px 0
+		.col-custom
+			width: 20%
+			flex: 0 0 20%
+			padding: 0px 15px
+			+media-breakpoint-down(md)
+				width: 33.33%
+				flex: 0 0 33.33%
+				margin-bottom: 20px
+			+media-breakpoint-down(sm)
+				width: 50%
+				flex: 0 0 50%
+		.footer-col
+			.title
+				+fs(12rem)
+				font-weight: 700
+				color: $main
+				margin-bottom: 15px
+				text-transform: uppercase
+				&:after
+					content: '\f107'
+					font-family: 'fontawesome'
+					margin-left: 5px
+					color: darken($white,40%)
+			.footer-link
+				ul
+					li
+						margin-bottom: 7px
+						a
+							color: darken($white,60%)
+							text-transform: uppercase
+							+fs(10rem)
+							font-weight: 500
+	.footer-contact
+		border: 1px solid darken($white,20%)
+		.contact-info
+			border-right: 1px solid darken($white,20%)
+			+flexbox
+			flex-wrap: wrap
+			padding: 15px 20px
+			.link,.viewmap
+				+fs(11rem)
+				font-weight: 500
+				color: $main
+				text-transform: uppercase
+				width: 15%
+				+media-breakpoint-down(sm)
+					width: 15%
+				+media-breakpoint-down(xs)
+					width: 100%
+					margin-bottom: 10px
+					text-align: center
+				&:hover
+					color: $blue
+			.viewmap
+				text-align: center
+				+media-breakpoint-down(sm)
+					width: 100%
+					margin-top: 10px
+			.hotline, .email
+				width: calc((100% - 30%) / 2)
+				+fs(11rem)
+				+media-breakpoint-down(sm)
+					width: calc((100% - 15%) / 2)
+				+media-breakpoint-down(xs)
+					width: 100%
+					text-align: center
+					margin-bottom: 10px
+				.label
+					display: inline-block
+					+fs(11rem)
+					text-transform: uppercase
+					color: darken($white,40%)
+				a
+					display: inline-block
+					+fs(11rem)
+					color: $main
+					font-weight: 500
+					+media-breakpoint-down(xs)
+						display: block
+		.Module-208
+			height: 100%
+		.ModuleContent
+			height: 100%
+		.social
+			height: 100%
+			+flexbox
+			align-items: center
+			padding: 0px 20px
+			+media-breakpoint-down(md)
+				padding: 10px 20px
+			+media-breakpoint-down(xs)
+				text-align: center
+				display: block
+				padding-bottom: 10px
+			.label
+				display: inline-block
+				vertical-align: middle
+				+fs(11rem)
+				text-transform: uppercase
+				font-weight: 500
+				+media-breakpoint-down(xs)
+					display: block
+					width: 100%
+			a
+				display: inline-block
+				vertical-align: middle
+				margin-left: 15px
+				+media-breakpoint-down(xs)
+					margin-left: 0
+					+ a
+						margin-left: 15px
+				.fa
+					&.fa-facebook
+						color: $facebook
+					&.fa-youtube-play
+						color: $youtube
+					&.fa-twitter
+						color: $twitter
+					&.fa-instagram
+						color: $inst
+	.footer-bottom
+		padding: 25px 0
+		.copyright
+			float: left
+			+fs(11rem)
+			color: darken($white,40%)
+		.footer-nav
+			float: right
+			a
+				display: inline-block
+				vertical-align: top
+				color: darken($white,40%)
+				+fs(11rem)
+				+ a
+					margin-left: 10px
+				&:hover
+					color: $blue
+
+.up
+	width: 40px
+	height: 40px
+	line-height: 40px
+	text-align: center
+	color: $white
+	background: $green
+	+bor-rad(50px)
+	cursor: pointer
+	+pos(fix, null 20px 20px null)
+	+transform(scale(1,-1))
+	z-index: 50
+	opacity: 0
+	&.active
+		opacity: 1

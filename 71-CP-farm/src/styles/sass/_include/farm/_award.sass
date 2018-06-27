@@ -1,0 +1,74 @@
+.award-page
+	@extend .about-section
+	.tabs-list
+		+flexbox
+		justify-content: center
+		margin-bottom: 20px
+		.tab-item
+			+media-breakpoint-down(sm)
+				width: calc(50% - 5px)
+			+media-breakpoint-down(xs)
+				display: none
+			+ .tab-item
+				margin-left: 20px
+				+media-breakpoint-down(sm)
+					margin-left: 10px
+			a
+				display: block
+				padding: 10px 30px
+				+bor-rad(5px)
+				+fs(15rem)
+				text-transform: uppercase
+				background: darken($white,4%)
+				color: $main
+				+media-breakpoint-down(sm)
+					padding: 8px 0
+					text-align: center
+					+fs(12rem)
+			&.r-tabs-state-active
+				a
+					background: $green
+					color: $white
+	.r-tabs-accordion-title
+		margin-bottom: 10px
+		a
+			display: block
+			+bor-rad(5px)
+			text-transform: uppercase
+			background: darken($white,4%)
+			color: $main
+			padding: 8px 0
+			text-align: center
+			text-transform: none
+			font-weight: 500
+			+fs(14rem)
+		&.r-tabs-state-active
+			a
+				background: $green
+				color: $white
+	.award-list
+		.award-col
+			margin-bottom: 10px
+			figure
+				.award-img
+					+flexbox
+					height: 250px
+					justify-content: center
+					align-items: center
+					align-content: center
+					// background: darken($white,4%)
+					img
+						max-width: 90%
+						max-height: 90%
+						+transition(all,0.5s)
+				figcaption
+					padding: 15px 0px
+					text-align: center
+					.award-name
+						+fs(14rem)
+						font-weight: 500
+						line-height: 1.5
+				&:hover
+					.award-img
+						img
+							+transform(scale3d(1.1,1.1,1))
